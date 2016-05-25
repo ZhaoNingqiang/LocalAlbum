@@ -66,6 +66,7 @@ public class LocalAlbum extends BaseActivity {
         helper = LocalImageHelper.getInstance();
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.rotate_loading);
         progress.startAnimation(animation);
+
         findViewById(R.id.album_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -272,10 +272,10 @@ public class DynamicPost extends BaseActivity implements OnClickListener, Matrix
         mCountView.setText((index + 1) + "/" + pictures.size());
         AnimationSet set = new AnimationSet(true);
         ScaleAnimation scaleAnimation = new ScaleAnimation((float) 0.9, 1, (float) 0.9, 1, pagerContainer.getWidth() / 2, pagerContainer.getHeight() / 2);
-        scaleAnimation.setDuration(200);
+        scaleAnimation.setDuration(2000);
         set.addAnimation(scaleAnimation);
         AlphaAnimation alphaAnimation = new AlphaAnimation((float) 0.1, 1);
-        alphaAnimation.setDuration(200);
+        alphaAnimation.setDuration(2000);
         set.addAnimation(alphaAnimation);
         pagerContainer.startAnimation(set);
     }
@@ -286,10 +286,10 @@ public class DynamicPost extends BaseActivity implements OnClickListener, Matrix
         editContainer.setVisibility(View.VISIBLE);
         AnimationSet set = new AnimationSet(true);
         ScaleAnimation scaleAnimation = new ScaleAnimation(1, (float) 0.9, 1, (float) 0.9, pagerContainer.getWidth() / 2, pagerContainer.getHeight() / 2);
-        scaleAnimation.setDuration(200);
+        scaleAnimation.setDuration(2000);
         set.addAnimation(scaleAnimation);
         AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
-        alphaAnimation.setDuration(200);
+        alphaAnimation.setDuration(2000);
         set.addAnimation(alphaAnimation);
         pagerContainer.startAnimation(set);
     }
