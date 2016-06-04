@@ -100,6 +100,10 @@ public class LocalAlbum extends BaseActivity {
                 intent.putExtra(ExtraKey.LOCAL_FOLDER_NAME, folderNames.get(i));
                 intent.setFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
                 startActivity(intent);
+
+
+//                Intent intent = new Intent(LocalAlbum.this, ChoosePicActivity.class);
+//                startActivity(intent);
             }
         });
     }
@@ -125,6 +129,9 @@ public class LocalAlbum extends BaseActivity {
         }
     };
 
+
+
+    
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {

@@ -8,4 +8,8 @@ public class Picture {
     public String originalUri;//原图URI
     public String thumbnailUri;//缩略图URI
     public int orientation;//图片旋转角度
+
+
+    public String folderName;
+    public boolean isFoloer;
 }
